@@ -15,6 +15,7 @@ class CreateSupermercadosTable extends Migration
     {
         Schema::create('supermercados', function (Blueprint $table) {
             $table->increments('id');
+            $table->string("nome");
             $table->timestamps();
         });
     }
