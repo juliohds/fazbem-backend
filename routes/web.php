@@ -22,3 +22,10 @@ $router->get('user/{id}',  ['uses' => 'UserController@show']);
 $router->post('user',  ['uses' => 'UserController@create']);
 $router->put('user/{id}',  ['uses' => 'UserController@update']);
 $router->delete('user/{id}',  ['uses' => 'UserController@destroy']);
+
+//estabelecimento
+$router->get('estabelecimento',  ['uses' => 'UserController@showAll']);
+$router->get('estabelecimento/{id}',  ['uses' => 'UserController@show']);
+$router->post('estabelecimento',  ['uses' => 'UserController@create']);
+$router->put('estabelecimento/{id}',  ['uses' => 'UserController@update']);
+$router->delete('estabelecimento/{id}',  ['uses' => 'UserController@destroy']);
