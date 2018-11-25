@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\comprador;
 
 class CompradorController extends Controller
 {
@@ -12,28 +13,28 @@ class CompradorController extends Controller
      * @return void
      */
     public function show($id){
-        $user = Usuario::find($id);
-        return response()->json($user);
+        $comprador = comprador::find($id);
+        return response()->json($comprador);
     }
     public function create(Request $request){
-        $user = new Usuario();
-        $user->fill($request->all());
-        $user->save();
-        return response()->json($user);
+        $comprador = new comprador();
+        $comprador->fill($request->all());
+        $comprador->save();
+        return response()->json($comprador);
     }
     public function update(Request $request, $id){
-        $user = Usuario::find($id);
-        $user->fill($request->all());
-        $user->update();
-        return response()->json($user);
+        $comprador = comprador::find($id);
+        $comprador->fill($request->all());
+        $comprador->update();
+        return response()->json($comprador);
     }
     public function destroy($id){
-        $user = Usuario::find($id);
-        $user->delete();
-        return response()->json($user);
+        $comprador = comprador::find($id);
+        $comprador->delete();
+        return response()->json($comprador);
     }
     public function showAll(){
-        $user = Usuario::all();
-        return response()->json($user);
+        $comprador = Usuario::all();
+        return response()->json($comprador);
     }
 }

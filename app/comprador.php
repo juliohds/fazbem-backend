@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class comprador extends Model
 {
     protected $fillable = [
-        'id', 'nome', 'email', 'senha'
+        'id', 'nome'
     ];
     /**
      * The attributes excluded from the model's JSON form.
