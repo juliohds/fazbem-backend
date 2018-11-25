@@ -24,8 +24,8 @@ $router->put('user/{id}',  ['uses' => 'UserController@update']);
 $router->delete('user/{id}',  ['uses' => 'UserController@destroy']);
 
 //estabelecimento
-$router->get('estabelecimento',  ['uses' => 'UserController@showAll']);
-$router->get('estabelecimento/{id}',  ['uses' => 'UserController@show']);
-$router->post('estabelecimento',  ['uses' => 'UserController@create']);
-$router->put('estabelecimento/{id}',  ['uses' => 'UserController@update']);
-$router->delete('estabelecimento/{id}',  ['uses' => 'UserController@destroy']);
+$router->get('estabelecimento',  ['uses' => 'EstabelecimentoController@showAll']);
+$router->get('estabelecimento/{id}',  ['uses' => 'EstabelecimentoController@show']);
+$router->post('estabelecimento',  ['uses' => 'EstabelecimentoController@create']);
+$router->put('estabelecimento/{id}',  ['uses' => 'EstabelecimentoController@update']);
+$router->delete('estabelecimento/{id}',  ['uses' => 'EstabelecimentoController@destroy']);
