@@ -13,28 +13,28 @@ class UserController extends Controller
      * @return void
      */
     public function show($id){
-        $product = Product::with('productCategory')->find($id);
-        return response()->json($product);
+        $user = User::with('productCategory')->find($id);
+        return response()->json($user);
     }
     public function create(Request $request){
-        $product = new Product();
-        $product->fill($request->all());
-        $product->save();
-        return response()->json($product);
+        $user = new ProUserduct();
+        $user->fill($request->all());
+        $user->save();
+        return response()->json($user);
     }
     public function update(Request $request, $id){
-        $product = Product::find($id);
-        $product->fill($request->all());
-        $product->update();
-        return response()->json($product);
+        $user = User::find($id);
+        $user->fill($request->all());
+        $user->update();
+        return response()->json($user);
     }
     public function destroy($id){
-        $product = Product::find($id);
-        $product->delete();
-        return response()->json($product);
+        $user = User::find($id);
+        $user->delete();
+        return response()->json($user);
     }
     public function showAll(){
-        $products = Product::all();
-        return response()->json($products);
+        $user = User::all();
+        return response()->json($user);
     }
 }
