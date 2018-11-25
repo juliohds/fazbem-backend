@@ -15,6 +15,11 @@ class CreateEstabelecimentosTable extends Migration
     {
         Schema::create('estabelecimentos', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('title');
+            $table->string('subtitle');
+            $table->string('img');
+            $table->string('imgsub');
+            $table->string('desc');            
             $table->timestamps();
         });
     }
