@@ -13,7 +13,7 @@ class UserController extends Controller
      * @return void
      */
     public function show($id){
-        $user = Usuario::with('productCategory')->find($id);
+        $user = Usuario::find($id);
         return response()->json($user);
     }
     public function create(Request $request){
