@@ -39,8 +39,8 @@ $router->put('supermercado/{id}',  ['uses' => 'SupermercadoController@update']);
 $router->delete('supermercado/{id}',  ['uses' => 'SupermercadoController@destroy']);
 
 //comprador
-$router->get('comprador',  ['uses' => 'CompradorControllerController@showAll']);
-$router->get('comprador/{id}',  ['uses' => 'CompradorControllerController@show']);
-$router->post('comprador',  ['uses' => 'CompradorControllerController@create']);
-$router->put('comprador/{id}',  ['uses' => 'CompradorControllerController@update']);
-$router->delete('comprador/{id}',  ['uses' => 'CompradorControllerController@destroy']);
+$router->get('comprador',  ['uses' => 'CompradorController@showAll']);
+$router->get('comprador/{id}',  ['uses' => 'CompradorController@show']);
+$router->post('comprador',  ['uses' => 'CompradorController@create']);
+$router->put('comprador/{id}',  ['uses' => 'CompradorController@update']);
+$router->delete('comprador/{id}',  ['uses' => 'CompradorController@destroy']);

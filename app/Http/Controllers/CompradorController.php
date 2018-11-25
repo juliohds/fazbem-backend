@@ -34,7 +34,7 @@ class CompradorController extends Controller
         return response()->json($comprador);
     }
     public function showAll(){
-        $comprador = Usuario::all();
+        $comprador = comprador::all();
         return response()->json($comprador);
     }
 }
