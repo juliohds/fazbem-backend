@@ -32,15 +32,15 @@ $router->delete('estabelecimento/{id}',  ['uses' => 'EstabelecimentoController@d
 
 
 //supermercado
-$router->get('user',  ['uses' => 'UserController@showAll']);
-$router->get('user/{id}',  ['uses' => 'UserController@show']);
-$router->post('user',  ['uses' => 'UserController@create']);
-$router->put('user/{id}',  ['uses' => 'UserController@update']);
-$router->delete('user/{id}',  ['uses' => 'UserController@destroy']);
+$router->get('supermercado',  ['uses' => 'SupermercadoController@showAll']);
+$router->get('supermercado/{id}',  ['uses' => 'SupermercadoController@show']);
+$router->post('supermercado',  ['uses' => 'SupermercadoController@create']);
+$router->put('supermercado/{id}',  ['uses' => 'SupermercadoController@update']);
+$router->delete('supermercado/{id}',  ['uses' => 'SupermercadoController@destroy']);
 
 //comprador
-$router->get('estabelecimento',  ['uses' => 'EstabelecimentoController@showAll']);
-$router->get('estabelecimento/{id}',  ['uses' => 'EstabelecimentoController@show']);
-$router->post('estabelecimento',  ['uses' => 'EstabelecimentoController@create']);
-$router->put('estabelecimento/{id}',  ['uses' => 'EstabelecimentoController@update']);
-$router->delete('estabelecimento/{id}',  ['uses' => 'EstabelecimentoController@destroy']);
+$router->get('comprador',  ['uses' => 'CompradorControllerController@showAll']);
+$router->get('comprador/{id}',  ['uses' => 'CompradorControllerController@show']);
+$router->post('comprador',  ['uses' => 'CompradorControllerController@create']);
+$router->put('comprador/{id}',  ['uses' => 'CompradorControllerController@update']);
+$router->delete('comprador/{id}',  ['uses' => 'CompradorControllerController@destroy']);
